@@ -3,7 +3,7 @@ import data from './../data';
 import {Link} from 'react-router-dom';
 
 function HomeScrean (props) {
-    return      <ul className="products">
+    return   <ul className="products">
     {
       data.products.map(product => 
         <li>
