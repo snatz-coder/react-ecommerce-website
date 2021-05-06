@@ -3,10 +3,7 @@ import data from './../data';
 import {Link} from 'react-router-dom';
 
 function ProductScrean (props) {
-    //console.log("hi");
-    //console.log(props.match.params.id);
     const product = data.products.find(x => Number(x._id) === Number(props.match.params.id));
-    //console.log(product);
     return <div>
     <div className="backToResult">
     <Link to="/">Back to result</Link>
@@ -27,7 +24,7 @@ function ProductScrean (props) {
               <li>Description:<div>{product.description}</div></li>
           </ul>
       </div>
-      <div class="details-action">
+      <div className="details-action">
         <ul>
             <li>
                 Price: $ {product.price}
